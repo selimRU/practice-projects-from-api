@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Api Data Load</title>
+    <style>
+        #data-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px 10px;
+        }
+
+        .comment {
+            border-radius: 10px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="dataLoad()">Load Data</button>
+    <section id="data-container">
+    </section>
+    <script src="./comments.js"></script>
+</body>
+
+</html>

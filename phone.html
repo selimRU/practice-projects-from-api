@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/32576525f7.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Phone hunter</title>
+</head>
+
+
+<body>
+    <div class="input-group mb-3 w-[500px] mt-3 mx-auto ">
+        <input id="input" type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+        <button onclick="searchHandle()" class="btn btn-secondary" id="button-addon2">Search</button>
+    </div>
+    <section>
+        <h3 class="text-center font-semibold text-2xl">Phone List</h3>
+        <div id="loading" class="hidden text-center">
+            <span class="loading loading-ball loading-xs"></span>
+            <span class="loading loading-ball loading-sm"></span>
+            <span class="loading loading-ball loading-md"></span>
+            <span class="loading loading-ball loading-lg"></span>
+        </div>
+        <div id="result-data" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center px-20">
+
+        </div>
+        <div id="show all" class="hidden text-center">
+            <button onclick="showAll()" class="btn btn-active btn-primary">Show All</button>
+        </div>
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="my_modal_1" class="modal">
+            <form method="dialog" class="modal-box">
+                <div id="phone_details">
+
+                </div>
+                <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </div>
+            </form>
+        </dialog>
+    </section>
+    <script src="./phone.js"></script>
+</body>
+
+</html>
